@@ -98,7 +98,7 @@ function cognitiveServiceEventResultToWebSpeechRecognitionResultList_default(res
   return [];
 }
 
-// node_modules/.pnpm/p-defer@4.0.1/node_modules/p-defer/index.js
+// ../../node_modules/p-defer/index.js
 function pDefer() {
   const deferred = {};
   deferred.promise = new Promise((resolve, reject) => {
@@ -1252,10 +1252,6 @@ function createSpeechServicesPonyfill(options = {}, ...args) {
     ...TextToSpeech_default(options, ...args)
   };
 }
-var meta = document.createElement("meta");
-meta.setAttribute("name", "web-speech-cognitive-services");
-meta.setAttribute("content", `version=${"0.0.0-0"}`);
-document.head.appendChild(meta);
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   createSpeechRecognitionPonyfill,

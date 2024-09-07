@@ -144,7 +144,7 @@ declare function _default$1(options: any): {
     SpeechSynthesisUtterance?: never;
 } | {
     speechSynthesis: {
-        queue: _default$4;
+        queue: AudioContextQueue;
         cancel(): void;
         getVoices(): any[];
         onvoiceschanged: any;

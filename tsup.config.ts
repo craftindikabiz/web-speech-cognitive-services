@@ -13,6 +13,7 @@ export default defineConfig([
     entry: {
       'web-speech-cognitive-services': './src/index.js'
     },
+    external: ['event-as-promise'],
     format: ['cjs', 'esm'],
     sourcemap: true,
     target: ['chrome100', 'edge100', 'firefox100', 'safari16']
